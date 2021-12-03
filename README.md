@@ -1,4 +1,10 @@
-# advent-of-code-cpp-starter
+# Advent of Code 2021
+This repository was created from the AoC C++ starter here: https://github.com/bcooperstl/advent-of-code-cpp-starter
+
+The remainder of the README is unmodifed from the original.
+
+---
+
 This is a simple C++ runner for doing Advent-of-Code challenges. It's designed to have one executable which is given parameters for the day and part, and then it will run that particular solution.
 
 It's designed for C++ under Linux. I've tested it with CentOS 8 and GCC version 8.3.1.
