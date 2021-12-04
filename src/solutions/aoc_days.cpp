@@ -6,6 +6,7 @@
 #include "aoc_day_1.h"
 #include "aoc_day_2.h"
 #include "aoc_day_3.h"
+#include "aoc_day_4.h"
 
 using namespace std;
 
@@ -15,6 +16,7 @@ AocDays::AocDays()
     m_days[1]=new AocDay1();
     m_days[2]=new AocDay2();
     m_days[3]=new AocDay3();
+    m_days[4]=new AocDay4();
 }
 
 AocDays::~AocDays()
