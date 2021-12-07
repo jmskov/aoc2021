@@ -34,7 +34,8 @@ vector<bitset<12>> AocDay3::read_input(string filename)
     for (vector<string>::iterator iter = raw_lines.begin(); iter != raw_lines.end(); ++iter)
     {
         string to_convert = *iter;
-        bitset<12> bs{to_convert};
+        cout << to_convert << endl;
+        bitset<12> bs{to_convert.substr(0,12)};
         data.push_back(bs);
     }
     return data;
@@ -113,6 +114,7 @@ string AocDay3::part2(string filename, vector<string> extra_args)
     while (i>=0 && co2_data.size() > 1)
     {
         int current_count = count_bits_in_pos(co2_data, i);
+        cout << current_count << " / " << co2_data.size() << endl;
         if ((co2_data.size() - current_count) <= current_count) {
             co2_data = remove_data_entries(co2_data, i, true); 
         }
